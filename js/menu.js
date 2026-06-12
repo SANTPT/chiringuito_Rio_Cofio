@@ -40,7 +40,7 @@ const MENU = {
         { nombre: "Nachos", descripcion: "Con queso, guacamole y pico de gallo", precio: 10 },
         { nombre: "Tabla de embutidos o de quesos", descripcion: "A elegir", precio: 12 },
         { nombre: "Gyozas vegetarianas", descripcion: "", precio: 8.5, tags: ["veggie"] },
-        { nombre: "Croquetas", descripcion: "A elegir entre Jamón, Boletus, chipirones o rabo de toro", precio: 6 }
+        { nombre: "Croquetas", descripcion: "A elegir entre Jamón, Boletus, chipirones o rabo de toro", precio: 6.0 }
       ]
     },
 
