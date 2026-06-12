@@ -7,6 +7,10 @@
 (function () {
   "use strict";
 
+  var isProgrammaticScroll = false;
+  var programmaticScrollTimeout = null;
+  var marcarActivoFn = null;
+
   var ETIQUETAS = {
     vegana: "Vegana",
     veggie: "Veggie",
@@ -43,6 +47,35 @@
     secciones.forEach(function (seccion) {
       var enlace = crear("a", null, seccion.titulo);
       enlace.href = "#" + seccion.id;
+      
+      enlace.addEventListener("click", function (e) {
+        e.preventDefault();
+        
+        var targetSection = document.getElementById(seccion.id);
+        if (targetSection) {
+          if (programmaticScrollTimeout) {
+            clearTimeout(programmaticScrollTimeout);
+          }
+          isProgrammaticScroll = true;
+          
+          if (marcarActivoFn) {
+            marcarActivoFn(seccion.id, true);
+          }
+          
+          var navHeight = nav.offsetHeight || 58;
+          var targetTop = targetSection.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+          
+          window.scrollTo({
+            top: targetTop,
+            behavior: "smooth"
+          });
+          
+          programmaticScrollTimeout = setTimeout(function () {
+            isProgrammaticScroll = false;
+          }, 800);
+        }
+      });
+
       nav.appendChild(enlace);
     });
   }
@@ -105,7 +138,7 @@
 
     var seccionActivaId = null;
 
-    function marcarActivo(id) {
+    function marcarActivo(id, smooth) {
       if (seccionActivaId === id) return;
       seccionActivaId = id;
 
@@ -119,23 +152,31 @@
           var linkWidth = a.clientWidth;
           var targetScrollLeft = linkLeft - (navWidth / 2) + (linkWidth / 2);
           
-          nav.scrollTo({
-            left: targetScrollLeft,
-            behavior: "smooth"
-          });
+          if (smooth) {
+            nav.scrollTo({
+              left: targetScrollLeft,
+              behavior: "smooth"
+            });
+          } else {
+            nav.scrollLeft = targetScrollLeft;
+          }
         } else {
           a.classList.remove("activa");
         }
       });
     }
 
+    marcarActivoFn = marcarActivo;
+
     function actualizarScrollspy() {
+      if (isProgrammaticScroll) return;
+
       var secciones = document.querySelectorAll(".seccion");
       if (!secciones.length) return;
 
       var isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 20;
       if (isAtBottom) {
-        marcarActivo(secciones[secciones.length - 1].id);
+        marcarActivo(secciones[secciones.length - 1].id, false);
         return;
       }
 
@@ -157,7 +198,7 @@
         activaId = secciones[0].id;
       }
 
-      marcarActivo(activaId);
+      marcarActivo(activaId, false);
     }
 
     window.addEventListener("scroll", actualizarScrollspy);

@@ -17,7 +17,7 @@ const MENU = {
     nombre: "Chiringuito del Río Cofío",
     lema: "Comida, tapas, cócteles y más",
     direccion: "Urb. Río Cofio · C/ Península, 11 · 28294 Robledo de Chavela (Madrid)",
-    mapsUrl: "https://maps.google.com/?q=Calle+Pen%C3%ADnsula+11,+28294+Robledo+de+Chavela",
+    mapsUrl: "https://maps.google.com/?q=Piscina+Urbanizacion+Rio+Cofio+Robledo+de+Chavela",
     horarios: [
       { dias: "Domingo a jueves", horas: "11:00 – 24:00" },
       { dias: "Viernes y sábado", horas: "11:00 – 01:00" }
