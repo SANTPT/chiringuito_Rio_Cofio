@@ -1,0 +1,341 @@
+/* ============================================================
+   EL CHIRINGUITO DEL COFIO — Estilos
+   Paleta extraída del baldosín real del local:
+   azul cobalto #15304E · ocre #A0773E · crema cerámica
+   ============================================================ */
+
+:root {
+  --azul: #15304E;
+  --azul-claro: #2C4E7A;
+  --ocre: #A0773E;
+  --ocre-claro: #C29655;
+  --crema: #F7F3EA;
+  --crema-tarjeta: #FCFAF4;
+  --tinta: #2B2A26;
+  --tinta-suave: #8A8472;
+  --linea: #E2DCCB;
+  --verde-fondo: #E8EFDB;
+  --verde-texto: #3B6D11;
+  --alto-nav: 56px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--alto-nav) + 12px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--tinta);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Cenefa de baldosines ---------- */
+.cenefa {
+  height: 36px;
+  background-image: url("../assets/baldosin_48.png");
+  background-size: 36px 36px;
+  background-repeat: repeat-x;
+  border-bottom: 1px solid var(--linea);
+}
+
+.cenefa--pie {
+  border-bottom: none;
+  border-top: 1px solid rgba(247, 243, 234, 0.35);
+}
+
+/* ---------- Cabecera ---------- */
+.cabecera {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 24px 24px;
+  text-align: center;
+}
+
+.cabecera__baldosin {
+  width: 120px;
+  height: 120px;
+  border: 1px solid var(--linea);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(21, 48, 78, 0.12);
+}
+
+.cabecera__sobre {
+  margin: 16px 0 0;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: var(--ocre);
+}
+
+.cabecera__titulo {
+  margin: 2px 0 0;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--azul);
+}
+
+.cabecera__sub {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: var(--tinta-suave);
+}
+
+/* ---------- Navegación ---------- */
+.navegacion-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navegacion-wrapper::before,
+.navegacion-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  width: 24px;
+  z-index: 11;
+  pointer-events: none;
+}
+
+.navegacion-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(247, 243, 234, 0.95), transparent);
+}
+
+.navegacion-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(247, 243, 234, 0.95), transparent);
+}
+
+.navegacion {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 10px 16px;
+  background: rgba(247, 243, 234, 0.95);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid var(--linea);
+  border-bottom: 1px solid var(--linea);
+}
+
+.navegacion::-webkit-scrollbar { display: none; }
+
+.navegacion a {
+  flex: 0 0 auto;
+  font-size: 13.5px;
+  padding: 7px 15px;
+  border-radius: 999px;
+  border: 1px solid var(--linea);
+  color: var(--tinta-suave);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.navegacion a:hover { border-color: var(--ocre); color: var(--azul); }
+
+.navegacion a.activa {
+  background: var(--azul);
+  border-color: var(--azul);
+  color: var(--crema);
+  font-weight: 600;
+}
+
+.navegacion a:focus-visible {
+  outline: 2px solid var(--ocre);
+  outline-offset: 2px;
+}
+
+/* ---------- Carta ---------- */
+.carta {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8px 24px 40px;
+}
+
+.seccion { padding-top: 28px; }
+
+.seccion__cabecera {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.seccion__vineta {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url("../assets/baldosin_48.png");
+  background-size: 34px 34px;
+  background-position: center;
+  border: 1px solid var(--linea);
+  flex: 0 0 auto;
+}
+
+.seccion__titulo {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--azul);
+}
+
+.seccion__nota {
+  margin: 2px 0 14px 32px;
+  font-size: 12.5px;
+  color: var(--ocre);
+}
+
+.seccion__intro {
+  margin: 6px 0 12px;
+  font-size: 14px;
+  color: var(--tinta-suave);
+}
+
+.plato { margin-bottom: 15px; }
+
+.plato__linea {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.plato__nombre { font-size: 15.5px; }
+
+.plato__puntos {
+  flex: 1;
+  border-bottom: 2px dotted var(--linea);
+  transform: translateY(-3px);
+}
+
+.plato__precio {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--azul);
+  white-space: nowrap;
+}
+
+.plato__descripcion {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--tinta-suave);
+}
+
+.etiqueta {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--verde-fondo);
+  color: var(--verde-texto);
+  margin-left: 6px;
+  vertical-align: 1px;
+}
+
+.lista-simple {
+  margin: 0;
+  padding: 0 0 0 2px;
+  list-style: none;
+}
+
+.lista-simple li {
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--linea);
+  font-size: 15px;
+}
+
+.lista-simple li:last-child { border-bottom: none; }
+
+.lista-simple li::before {
+  content: "◆";
+  color: var(--ocre);
+  font-size: 9px;
+  margin-right: 10px;
+  vertical-align: 2px;
+}
+
+/* ---------- Pie ---------- */
+.pie {
+  background: var(--azul);
+  color: var(--crema);
+}
+
+.pie__contenido {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 24px 32px;
+  text-align: center;
+}
+
+.pie__horarios {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pie__direccion {
+  margin: 0;
+  font-size: 13px;
+  color: #B9C2CF;
+}
+
+.pie__maps { margin: 14px 0 0; font-size: 13.5px; }
+
+.pie__maps a {
+  color: var(--ocre-claro);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--ocre-claro);
+  padding-bottom: 1px;
+}
+
+.pie__maps a:hover { color: #E0BC7E; }
+
+.pie__maps a:focus-visible {
+  outline: 2px solid var(--ocre-claro);
+  outline-offset: 3px;
+}
+
+/* ---------- Escritorio ---------- */
+@media (min-width: 720px) {
+  .cabecera { padding-top: 48px; }
+  .cabecera__baldosin { width: 140px; height: 140px; }
+  .cabecera__titulo { font-size: 40px; }
+}
+
+@media (min-width: 940px) {
+  .navegacion { justify-content: center; }
+}
+
+/* ---------- Adaptación a móviles ---------- */
+@media (max-width: 480px) {
+  .cabecera {
+    padding: 24px 16px 16px;
+  }
+  
+  .carta {
+    padding: 8px 16px 32px;
+  }
+  
+  .seccion__nota {
+    margin-left: 32px;
+  }
+  
+  .pie__contenido {
+    padding: 20px 16px 24px;
+  }
+}
