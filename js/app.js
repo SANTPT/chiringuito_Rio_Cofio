@@ -99,29 +99,76 @@
   }
 
   function activarSeguimientoNavegacion() {
+    var nav = document.getElementById("navegacion");
     var enlaces = Array.prototype.slice.call(
       document.querySelectorAll(".navegacion a")
     );
     var porId = {};
     enlaces.forEach(function (a) { porId[a.getAttribute("href").slice(1)] = a; });
 
+    var seccionActivaId = null;
+
+    function marcarActivo(id) {
+      if (seccionActivaId === id) return;
+      seccionActivaId = id;
+
+      enlaces.forEach(function (a) {
+        if (a.getAttribute("href").slice(1) === id) {
+          a.classList.add("activa");
+          
+          // Scroll the menu container to center the active link
+          var navWidth = nav.clientWidth;
+          var linkLeft = a.offsetLeft;
+          var linkWidth = a.clientWidth;
+          var targetScrollLeft = linkLeft - (navWidth / 2) + (linkWidth / 2);
+          
+          nav.scrollTo({
+            left: targetScrollLeft,
+            behavior: "smooth"
+          });
+        } else {
+          a.classList.remove("activa");
+        }
+      });
+    }
+
     var observador = new IntersectionObserver(
       function (entradas) {
+        var isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 20;
+        if (isAtBottom) {
+          var ultimaSeccion = document.querySelectorAll(".seccion");
+          if (ultimaSeccion.length) {
+            marcarActivo(ultimaSeccion[ultimaSeccion.length - 1].id);
+            return;
+          }
+        }
+
+        var entradaVisible = null;
         entradas.forEach(function (entrada) {
-          if (!entrada.isIntersecting) return;
-          enlaces.forEach(function (a) { a.classList.remove("activa"); });
-          var activa = porId[entrada.target.id];
-          if (activa) {
-            activa.classList.add("activa");
-            activa.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+          if (entrada.isIntersecting) {
+            entradaVisible = entrada;
           }
         });
+
+        if (entradaVisible) {
+          marcarActivo(entradaVisible.target.id);
+        }
       },
-      { rootMargin: "-20% 0px -70% 0px" }
+      { rootMargin: "-20% 0px -60% 0px" }
     );
 
     document.querySelectorAll(".seccion").forEach(function (seccion) {
       observador.observe(seccion);
+    });
+
+    window.addEventListener("scroll", function () {
+      var isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 20;
+      if (isAtBottom) {
+        var secciones = document.querySelectorAll(".seccion");
+        if (secciones.length) {
+          marcarActivo(secciones[secciones.length - 1].id);
+        }
+      }
     });
   }
 
