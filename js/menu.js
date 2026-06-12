@@ -65,7 +65,7 @@ const MENU = {
       id: "Postres",
       titulo: "Postres",
       items: [
-        { nombre: "Ensalada de frutas frescas", descripcion: "Con helado de madarina", precio: 5 }
+        { nombre: "Ensalada de frutas frescas", descripcion: "Frutas frescas con helado de madarina", precio: 5 }
       ]
     }
   ]
