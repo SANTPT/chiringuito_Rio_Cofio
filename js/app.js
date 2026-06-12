@@ -14,10 +14,7 @@
   };
 
   function formatearPrecio(precio) {
-    var texto = Number.isInteger(precio)
-      ? String(precio)
-      : precio.toFixed(2).replace(".", ",");
-    return texto + "\u00A0€";
+    return precio.toFixed(2).replace(".", ",") + "\u00A0€";
   }
 
   function crear(tag, clase, texto) {
@@ -132,44 +129,42 @@
       });
     }
 
-    var observador = new IntersectionObserver(
-      function (entradas) {
-        var isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 20;
-        if (isAtBottom) {
-          var ultimaSeccion = document.querySelectorAll(".seccion");
-          if (ultimaSeccion.length) {
-            marcarActivo(ultimaSeccion[ultimaSeccion.length - 1].id);
-            return;
-          }
-        }
+    function actualizarScrollspy() {
+      var secciones = document.querySelectorAll(".seccion");
+      if (!secciones.length) return;
 
-        var entradaVisible = null;
-        entradas.forEach(function (entrada) {
-          if (entrada.isIntersecting) {
-            entradaVisible = entrada;
-          }
-        });
-
-        if (entradaVisible) {
-          marcarActivo(entradaVisible.target.id);
-        }
-      },
-      { rootMargin: "-20% 0px -60% 0px" }
-    );
-
-    document.querySelectorAll(".seccion").forEach(function (seccion) {
-      observador.observe(seccion);
-    });
-
-    window.addEventListener("scroll", function () {
       var isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 20;
       if (isAtBottom) {
-        var secciones = document.querySelectorAll(".seccion");
-        if (secciones.length) {
-          marcarActivo(secciones[secciones.length - 1].id);
+        marcarActivo(secciones[secciones.length - 1].id);
+        return;
+      }
+
+      var navHeight = nav.offsetHeight || 58;
+      var threshold = navHeight + 24; 
+
+      var activaId = seccionActivaId || secciones[0].id;
+      
+      for (var i = 0; i < secciones.length; i++) {
+        var rect = secciones[i].getBoundingClientRect();
+        if (rect.top <= threshold) {
+          activaId = secciones[i].id;
+        } else {
+          break;
         }
       }
-    });
+
+      if (window.scrollY < 10) {
+        activaId = secciones[0].id;
+      }
+
+      marcarActivo(activaId);
+    }
+
+    window.addEventListener("scroll", actualizarScrollspy);
+    window.addEventListener("resize", actualizarScrollspy);
+    
+    // Initial check
+    actualizarScrollspy();
   }
 
   function iniciar() {

@@ -14,7 +14,7 @@
 
 const MENU = {
   local: {
-    nombre: "El Chiringuito del Cofio",
+    nombre: "Chiringuito del Río Cofío",
     lema: "Comida, tapas, cócteles y más",
     direccion: "Urb. Río Cofio · C/ Península, 11 · 28294 Robledo de Chavela (Madrid)",
     mapsUrl: "https://maps.google.com/?q=Calle+Pen%C3%ADnsula+11,+28294+Robledo+de+Chavela",
