@@ -55,7 +55,7 @@ const MENU = {
       id: "Ensaladas",
       titulo: "Ensaladas",
       items: [
-        { nombre: "Mezclum rulo de cabra", descripcion: "Rulo de cabra, cebolla caramelizada, nueces y miel", precio: 6,5 },
+        { nombre: "Mezclum rulo de cabra", descripcion: "Rulo de cabra, cebolla caramelizada, nueces y miel", precio: 6.5 },
         { nombre: "Mezclum de pollo frito", descripcion: "Pollo frito, parmesano, nueces y cebolla caramelizada", precio: 7 },
         { nombre: "Tomate con ventresca", descripcion: "Limón, piparras y mezclum", precio: 12.5 },
       ]
