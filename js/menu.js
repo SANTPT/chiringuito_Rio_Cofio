@@ -33,11 +33,11 @@ const MENU = {
       items: [
         { nombre: "Nuggets karaage", descripcion: "Al estilo japonés, con mayonesa cítrica", precio: 8.5 },
         { nombre: "Lágrimas de pollo", descripcion: "Con mayonesa de ajo asado", precio: 8.5 },
-        { nombre: "Patatas bravas", descripcion: "Con salsa brava casera", precio: 4.5 },
-        { nombre: "Patatas con mayonesa", descripcion: "Mayo de ajo asado o mayo trufada, a elegir", precio: 4.5 },
-        { nombre: "Tempura de verduras", descripcion: "", precio: 4.5, tags: ["veggie"] },
+        { nombre: "Patatas bravas", descripcion: "Con salsa brava casera", precio: 5 },
+        { nombre: "Patatas con mayonesa", descripcion: "Mayo de ajo asado o mayo trufada, a elegir", precio: 5 },
+        { nombre: "Tempura de verduras", descripcion: "", precio: 5, tags: ["veggie"] },
         { nombre: "Tabla de embutidos o de quesos", descripcion: "A elegir", precio: 12 },
-        { nombre: "Croquetas", descripcion: "A elegir entre Jamón, Boletus, chipirones o rabo de toro", precio: 6.0 }
+        { nombre: "Croquetas", descripcion: "A elegir entre Jamón, Boletus, chipirones o rabo de toro", precio: 7.0 }
       ]
     },
 
@@ -55,8 +55,8 @@ const MENU = {
       id: "Ensaladas",
       titulo: "Ensaladas",
       items: [
-        { nombre: "Mezclum rulo de cabra", descripcion: "Rulo de cabra, cebolla caramelizada, nueces y miel", precio: 6 },
-        { nombre: "Mezclum de pollo frito", descripcion: "Pollo frito, parmesano, nueces y cebolla caramelizada", precio: 6.5 },
+        { nombre: "Mezclum rulo de cabra", descripcion: "Rulo de cabra, cebolla caramelizada, nueces y miel", precio: 6,5 },
+        { nombre: "Mezclum de pollo frito", descripcion: "Pollo frito, parmesano, nueces y cebolla caramelizada", precio: 7 },
         { nombre: "Tomate con ventresca", descripcion: "Limón, piparras y mezclum", precio: 12.5 },
       ]
     },
