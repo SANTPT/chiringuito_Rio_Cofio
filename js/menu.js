@@ -67,6 +67,30 @@ const MENU = {
       items: [
         { nombre: "Ensalada de frutas frescas", descripcion: "Frutas frescas con helado de madarina", precio: 5 }
       ]
+    },
+    {
+      id: "bebidas",
+      titulo: "Bebidas",
+      items: [
+        { nombre: "Refresco", descripcion: "", precio: 2.2 },
+        { nombre: "Red Bull", descripcion: "", precio: 3.2 },
+        { nombre: "Botella de agua pequeña", descripcion: "", precio: 1.5 },
+        { nombre: "Botella de agua grande", descripcion: "", precio: 2.2 },
+        { nombre: "Doble", descripcion: "", precio: 2.5 },
+        { nombre: "Cañon", descripcion: "", precio: 2.8 },
+        { nombre: "Tercio de cerveza", descripcion: "", precio: 2.8 },
+        { nombre: "Cubo de cerveza 1/4", descripcion: "Promocion: 5 unidaes de botellin de cerveza (1/4) ", precio: 7.5 },
+        { nombre: "Botellín de cerveza 1/4", descripcion: "", precio: 1.7 },
+        { nombre: "Tercio de cerveza", descripcion: "", precio: 2.8 },
+        { nombre: "Vino cosechero", descripcion: "", precio: 2.5 },
+        { nombre: "Vino crianza", descripcion: "", precio: 2.5 },
+        { nombre: "Vino blanco Rueda", descripcion: "", precio: 2 },
+        { nombre: "Aperol Spritz", descripcion: "", precio: 7.5},
+        { nombre: "Cubata", descripcion: "", precio: 7.5 },
+        { nombre: "Coctail", descripcion: "", precio: 8 },
+        { nombre: "Coctail con redbull", descripcion: "", precio: 9 }
+
+      ]
     }
   ]
 };
