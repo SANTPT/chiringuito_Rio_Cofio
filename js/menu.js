@@ -72,7 +72,8 @@ const MENU = {
       id: "bebidas",
       titulo: "Bebidas",
       items: [
-        { nombre: "Zumo", descripcion: "Piña, naranja, melocoton, tomate", precio: 2.2 },        
+        { nombre: "Zumo", descripcion: "Piña, Naranja, Melocoton, Tomate", precio: 2.2 },        
+        { nombre: "Mosto", descripcion: "", precio: 2.2 },        
         { nombre: "Refresco", descripcion: "", precio: 2.2 },
         { nombre: "Red Bull", descripcion: "", precio: 3.2 },
         { nombre: "Botella de agua pequeña", descripcion: "", precio: 1.5 },
