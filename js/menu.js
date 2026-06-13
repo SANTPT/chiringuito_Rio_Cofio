@@ -65,7 +65,7 @@ const MENU = {
       id: "Postres",
       titulo: "Postres",
       items: [
-        { nombre: "Ensalada de frutas frescas", descripcion: "Frutas frescas con helado de madarina", precio: 5 }
+        { nombre: "Ensalada de frutas frescas", descripcion: "Frutas frescas con helado de mandarina", precio: 5 }
       ]
     },
     {
@@ -83,7 +83,6 @@ const MENU = {
         { nombre: "Tercio de cerveza", descripcion: "", precio: 2.8 },
         { nombre: "Cubo de cerveza 1/4", descripcion: "Promocion: 5 unidaes de botellin de cerveza (1/4) ", precio: 7.5 },
         { nombre: "Botellín de cerveza 1/4", descripcion: "", precio: 1.7 },
-        { nombre: "Tercio de cerveza", descripcion: "", precio: 2.8 },
         { nombre: "Cerverza Alhambra 1/3", descripcion: "", precio: 3 },
         { nombre: "Vino cosechero", descripcion: "", precio: 2.2 },
         { nombre: "Vino crianza", descripcion: "", precio: 2.5 },
