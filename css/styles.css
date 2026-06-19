@@ -315,6 +315,68 @@ body {
   outline-offset: 0.1875rem; /* 3px */
 }
 
+/* ---------- Alérgenos ---------- */
+.plato__alergenos {
+  display: flex;
+  gap: 0.25rem; /* 4px */
+  margin-top: 0.375rem; /* 6px */
+  flex-wrap: wrap;
+}
+
+.alergeno-badge {
+  width: 1.375rem; /* 22px */
+  height: 1.375rem; /* 22px */
+  border-radius: 50%;
+  border: 1px solid var(--linea);
+  font-size: 0.9375rem; /* ~15px */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: help;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  user-select: none;
+  background: var(--crema-tarjeta);
+  /* Estilizado de emojis para integrarse con el tono crema/sepia general */
+  filter: grayscale(1) sepia(0.35) brightness(0.9) opacity(0.8);
+}
+
+.alergeno-badge:hover {
+  transform: scale(1.25);
+  border-color: var(--ocre);
+  background: var(--crema);
+  box-shadow: 0 4px 10px rgba(160, 119, 62, 0.2);
+  /* Revelar el color completo del emoji al pasar el cursor o pulsar */
+  filter: none;
+}
+
+.seccion--leyenda {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--linea);
+}
+
+.leyenda-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.875rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: var(--crema-tarjeta);
+  border: 1px solid var(--linea);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(21, 48, 78, 0.03);
+}
+
+.leyenda-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 8px */
+}
+
+.leyenda-nombre {
+  font-size: 0.8125rem; /* 13px */
+  color: var(--tinta);
+}
+
 /* ---------- Escritorio ---------- */
 @media (min-width: 45rem) { /* 720px */
   .cabecera { padding-top: 3rem; /* 48px */ }

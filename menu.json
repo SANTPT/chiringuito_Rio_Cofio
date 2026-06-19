@@ -6,142 +6,434 @@
     "direccion": "Urb. Río Cofio · C/ Península, 11 · 28294 Robledo de Chavela (Madrid)",
     "mapsUrl": "https://maps.google.com/?q=Calle+Pen%C3%ADnsula+11,+28294+Robledo+de+Chavela",
     "horarios": [
-      { "dias": "Todos los días", "horas": "11:00 – 24:00" }
+      {
+        "dias": "Todos los días",
+        "horas": "11:00 – 24:00"
+      }
     ],
     "avisoApertura": "Abierto todos los días"
   },
-
   "secciones": [
     {
       "id": "picoteo",
       "titulo": "Picoteo",
       "items": [
-        { "nombre": "Nugets karagee", "descripcion": "Al estilo japonés con mayonesa cítrica", "precio": 8.5 },
-        { "nombre": "Lágrimas de pollo", "descripcion": "Con mayonesa de ajo asado", "precio": 8.5 },
-        { "nombre": "Patatas bravas", "descripcion": "", "precio": 5, "tags": ["veggie"] },
-        { "nombre": "Patatas con mayo", "descripcion": "Con mayo de ajo asado o mayo trufada", "precio": 5, "tags": ["veggie"] },
-        { "nombre": "Tempura de verduras", "descripcion": "", "precio": 5, "tags": ["veggie"] },
-        { "nombre": "Nachos", "descripcion": "Con queso, guacamole y pico de gallo", "precio": 10 },
-        { "nombre": "Tabla de embutidos", "descripcion": "", "precio": 12 },
-        { "nombre": "Croquetas", "descripcion": "A elegir entre jamón, boletus, chipirones o rabo de toro", "precio": 7 }
+        {
+          "nombre": "Nugets karagee",
+          "descripcion": "Al estilo japonés con mayonesa cítrica",
+          "precio": 8.5
+        },
+        {
+          "nombre": "Lágrimas de pollo",
+          "descripcion": "Con mayonesa de ajo asado",
+          "precio": 8.5
+        },
+        {
+          "nombre": "Patatas bravas",
+          "descripcion": "",
+          "precio": 5,
+          "tags": [
+            "veggie"
+          ]
+        },
+        {
+          "nombre": "Patatas con mayo",
+          "descripcion": "Con mayo de ajo asado o mayo trufada",
+          "precio": 5,
+          "tags": [
+            "veggie"
+          ]
+        },
+        {
+          "nombre": "Tempura de verduras",
+          "descripcion": "",
+          "precio": 5,
+          "tags": [
+            "veggie"
+          ]
+        },
+        {
+          "nombre": "Nachos",
+          "descripcion": "Con queso, guacamole y pico de gallo",
+          "precio": 10
+        },
+        {
+          "nombre": "Tabla de embutidos",
+          "descripcion": "",
+          "precio": 12
+        },
+        {
+          "nombre": "Croquetas",
+          "descripcion": "A elegir entre jamón, boletus, chipirones o rabo de toro",
+          "precio": 7
+        }
       ]
     },
-
     {
       "id": "hamburguesas",
       "titulo": "Hamburguesas",
       "nota": "Estos productos pueden pedirse con pan sin gluten por 0,50 €",
       "items": [
-        { "nombre": "Hamburguesa vegana Heura", "descripcion": "Con cebolla caramelizada, mezclum, tomate y piperrada", "precio": 12, "tags": ["veggie"] },
-        { "nombre": "Hamburguesa Chavela", "descripcion": "Con carne de ternera de Ávila, queso, mezclum, tomate, pepinillos y mostaza", "precio": 9 },
-        { "nombre": "Hamburguesa Cofío", "descripcion": "Con carne de ternera de Ávila, queso, huevo, beicon y cebolla caramelizada", "precio": 11.5 },
-        { "nombre": "Hamburguesa La Suiza", "descripcion": "Con carne de ternera de Ávila, queso raclette y mayonesa trufada", "precio": 12 },
-        { "nombre": "Hamburguesa Pollo", "descripcion": "Con pollo empanado, queso, cebolla pochada, lechuga y tomate", "precio": 8.5 }
+        {
+          "nombre": "Hamburguesa vegana Heura",
+          "descripcion": "Con cebolla caramelizada, mezclum, tomate y piperrada",
+          "precio": 12,
+          "tags": [
+            "veggie"
+          ]
+        },
+        {
+          "nombre": "Hamburguesa Chavela",
+          "descripcion": "Con carne de ternera de Ávila, queso, mezclum, tomate, pepinillos y mostaza",
+          "precio": 9
+        },
+        {
+          "nombre": "Hamburguesa Cofío",
+          "descripcion": "Con carne de ternera de Ávila, queso, huevo, beicon y cebolla caramelizada",
+          "precio": 11.5
+        },
+        {
+          "nombre": "Hamburguesa La Suiza",
+          "descripcion": "Con carne de ternera de Ávila, queso raclette y mayonesa trufada",
+          "precio": 12
+        },
+        {
+          "nombre": "Hamburguesa Pollo",
+          "descripcion": "Con pollo empanado, queso, cebolla pochada, lechuga y tomate",
+          "precio": 8.5
+        }
       ]
     },
-
     {
       "id": "ensaladas",
       "titulo": "Ensaladas",
       "items": [
-        { "nombre": "Mezclum rulo de cabra", "descripcion": "Con cebolla caramelizada, nueces y beicon", "precio": 6.5 },
-        { "nombre": "Mezclum pollo frito", "descripcion": "Con queso parmesano, nueces y cebolla caramelizada", "precio": 7 },
-        { "nombre": "Tomate, ventresca, limón, piparras y mezclum", "descripcion": "", "precio": 12.5 },
-        { "nombre": "Tomate, burrata, albahaca, limón, nueces y mezclum", "descripcion": "", "precio": 11, "tags": ["veggie"] }
+        {
+          "nombre": "Mezclum rulo de cabra",
+          "descripcion": "Con cebolla caramelizada, nueces y beicon",
+          "precio": 6.5
+        },
+        {
+          "nombre": "Mezclum pollo frito",
+          "descripcion": "Con queso parmesano, nueces y cebolla caramelizada",
+          "precio": 7
+        },
+        {
+          "nombre": "Tomate, ventresca, limón, piparras y mezclum",
+          "descripcion": "",
+          "precio": 12.5
+        },
+        {
+          "nombre": "Tomate, burrata, albahaca, limón, nueces y mezclum",
+          "descripcion": "",
+          "precio": 11,
+          "tags": [
+            "veggie"
+          ]
+        }
       ]
     },
-
     {
       "id": "bocadillos",
       "titulo": "Bocadillos",
       "nota": "Estos productos pueden pedirse con pan sin gluten por 0,50 €",
       "items": [
-        { "nombre": "Pollo vegano Heura", "descripcion": "Con piperrada y mayo de ajo asado", "precio": 11.5, "tags": ["veggie"] },
-        { "nombre": "Calamares frescos", "descripcion": "Rebozados al momento con perejil, limón y mayo de ajo asado", "precio": 7.5 },
-        { "nombre": "Salchicha fresca", "descripcion": "Con cebolla caramelizada y queso cheddar", "precio": 8 },
-        { "nombre": "Pulled pork", "descripcion": "Con cebolla caramelizada y queso cheddar", "precio": 6.5 },
-        { "nombre": "Pollo trufado", "descripcion": "Con queso parmesano, mezclum, mayo trufada y huevo", "precio": 10 },
-        { "nombre": "Pollo milanesa", "descripcion": "Con queso cheddar, tomate asado y mayo de ajo asado", "precio": 9 },
-        { "nombre": "Pollo cabra", "descripcion": "Con queso de cabra, beicon y cebolla caramelizada", "precio": 8 }
+        {
+          "nombre": "Pollo vegano Heura",
+          "descripcion": "Con piperrada y mayo de ajo asado",
+          "precio": 11.5,
+          "tags": [
+            "veggie"
+          ]
+        },
+        {
+          "nombre": "Calamares frescos",
+          "descripcion": "Rebozados al momento con perejil, limón y mayo de ajo asado",
+          "precio": 7.5
+        },
+        {
+          "nombre": "Salchicha fresca",
+          "descripcion": "Con cebolla caramelizada y queso cheddar",
+          "precio": 8
+        },
+        {
+          "nombre": "Pulled pork",
+          "descripcion": "Con cebolla caramelizada y queso cheddar",
+          "precio": 6.5
+        },
+        {
+          "nombre": "Pollo trufado",
+          "descripcion": "Con queso parmesano, mezclum, mayo trufada y huevo",
+          "precio": 10
+        },
+        {
+          "nombre": "Pollo milanesa",
+          "descripcion": "Con queso cheddar, tomate asado y mayo de ajo asado",
+          "precio": 9
+        },
+        {
+          "nombre": "Pollo cabra",
+          "descripcion": "Con queso de cabra, beicon y cebolla caramelizada",
+          "precio": 8
+        }
       ]
     },
-
     {
       "id": "platos",
       "titulo": "Platos",
       "items": [
-        { "nombre": "Pollo vegano Heura", "descripcion": "Con piperrada, patatas y ensalada", "precio": 13.5, "tags": ["veggie"] },
-        { "nombre": "Pollo a la plancha", "descripcion": "Con huevo, patatas y ensalada", "precio": 8.5 },
-        { "nombre": "Pollo milanesa", "descripcion": "Con salsa de tomate, queso, patatas y ensalada", "precio": 7.5 },
-        { "nombre": "Filete de ternera de Ávila", "descripcion": "Con huevo, patatas y ensalada", "precio": 12.5 },
-        { "nombre": "Salchicha fresca", "descripcion": "Con huevo, patatas y ensalada", "precio": 7.5 },
-        { "nombre": "Plato del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M" }
+        {
+          "nombre": "Pollo vegano Heura",
+          "descripcion": "Con piperrada, patatas y ensalada",
+          "precio": 13.5,
+          "tags": [
+            "veggie"
+          ]
+        },
+        {
+          "nombre": "Pollo a la plancha",
+          "descripcion": "Con huevo, patatas y ensalada",
+          "precio": 8.5
+        },
+        {
+          "nombre": "Pollo milanesa",
+          "descripcion": "Con salsa de tomate, queso, patatas y ensalada",
+          "precio": 7.5
+        },
+        {
+          "nombre": "Filete de ternera de Ávila",
+          "descripcion": "Con huevo, patatas y ensalada",
+          "precio": 12.5
+        },
+        {
+          "nombre": "Salchicha fresca",
+          "descripcion": "Con huevo, patatas y ensalada",
+          "precio": 7.5
+        },
+        {
+          "nombre": "Plato del día",
+          "descripcion": "Pregunta nuestra sugerencia",
+          "precio": null,
+          "precioTexto": "S/M"
+        }
       ]
     },
-
     {
       "id": "postres",
       "titulo": "Postres",
       "items": [
-        { "nombre": "Coulant de chocolate", "descripcion": "Con helado de pistacho", "precio": 4 },
-        { "nombre": "Panna cotta con frutos rojos", "descripcion": "", "precio": 4 },
-        { "nombre": "Ensalada de frutas con helado de mandarina", "descripcion": "", "precio": 5, "tags": ["veggie"] },
-        { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M" }
+        {
+          "nombre": "Coulant de chocolate",
+          "descripcion": "Con helado de pistacho",
+          "precio": 4
+        },
+        {
+          "nombre": "Panna cotta con frutos rojos",
+          "descripcion": "",
+          "precio": 4
+        },
+        {
+          "nombre": "Ensalada de frutas con helado de mandarina",
+          "descripcion": "",
+          "precio": 5,
+          "tags": [
+            "veggie"
+          ]
+        },
+        {
+          "nombre": "Propuesta del día",
+          "descripcion": "Pregunta nuestra sugerencia",
+          "precio": null,
+          "precioTexto": "S/M"
+        }
       ]
     },
-
     {
       "id": "cocteles",
       "titulo": "Cócteles",
       "items": [
-        { "nombre": "Vermut preparado", "descripcion": "Vermut rojo, Campari, ginebra y angostura", "precio": 6.5 },
-        { "nombre": "Margarita", "descripcion": "Tequila, zumo de limón y triple sec", "precio": 7.5 },
-        { "nombre": "Aperol Spritz", "descripcion": "Aperol, prosecco y soda", "precio": 7.5 },
-        { "nombre": "Mojito", "descripcion": "Ron blanco, zumo de lima, menta, azúcar morena y soda", "precio": 8 },
-        { "nombre": "Piña colada", "descripcion": "Ron blanco, zumo de piña y crema de coco", "precio": 8 },
-        { "nombre": "Destornillador", "descripcion": "Vodka, zumo de naranja y soda de naranja", "precio": 8 },
-        { "nombre": "Bloody Mary", "descripcion": "Vodka, zumo de tomate y naranja, Tabasco y Worcestershire", "precio": 8 },
-        { "nombre": "Tequila sunrise", "descripcion": "Tequila, zumo de naranja y granadina", "precio": 8 }
+        {
+          "nombre": "Vermut preparado",
+          "descripcion": "Vermut rojo, Campari, ginebra y angostura",
+          "precio": 6.5
+        },
+        {
+          "nombre": "Margarita",
+          "descripcion": "Tequila, zumo de limón y triple sec",
+          "precio": 7.5
+        },
+        {
+          "nombre": "Aperol Spritz",
+          "descripcion": "Aperol, prosecco y soda",
+          "precio": 7.5
+        },
+        {
+          "nombre": "Mojito",
+          "descripcion": "Ron blanco, zumo de lima, menta, azúcar morena y soda",
+          "precio": 8
+        },
+        {
+          "nombre": "Piña colada",
+          "descripcion": "Ron blanco, zumo de piña y crema de coco",
+          "precio": 8
+        },
+        {
+          "nombre": "Destornillador",
+          "descripcion": "Vodka, zumo de naranja y soda de naranja",
+          "precio": 8
+        },
+        {
+          "nombre": "Bloody Mary",
+          "descripcion": "Vodka, zumo de tomate y naranja, Tabasco y Worcestershire",
+          "precio": 8
+        },
+        {
+          "nombre": "Tequila sunrise",
+          "descripcion": "Tequila, zumo de naranja y granadina",
+          "precio": 8
+        }
       ]
     },
-
     {
       "id": "cocteles-sin",
       "titulo": "Cócteles sin alcohol",
       "items": [
-        { "nombre": "Mojito sin alcohol", "descripcion": "Sirope a elegir, menta, zumo de lima y soda", "precio": 5 },
-        { "nombre": "San Francisco", "descripcion": "Zumo de naranja, limón y piña con un toque de granadina", "precio": 5 },
-        { "nombre": "Limonada casera", "descripcion": "Con un toque de menta y soda", "precio": 4 }
+        {
+          "nombre": "Mojito sin alcohol",
+          "descripcion": "Sirope a elegir, menta, zumo de lima y soda",
+          "precio": 5
+        },
+        {
+          "nombre": "San Francisco",
+          "descripcion": "Zumo de naranja, limón y piña con un toque de granadina",
+          "precio": 5
+        },
+        {
+          "nombre": "Limonada casera",
+          "descripcion": "Con un toque de menta y soda",
+          "precio": 4
+        }
       ]
     },
-
     {
       "id": "bebidas",
       "titulo": "Bebidas",
       "items": [
-        { "nombre": "Zumos", "descripcion": "Piña, naranja, melocotón, tomate o mosto", "precio": 2.2 },
-        { "nombre": "Refrescos", "descripcion": "Coca-Cola, Coca-Cola Zero, Nestea, Aquarius o Fanta", "precio": 2.2 },
-        { "nombre": "RedBull", "descripcion": "", "precio": 3.2 },
-        { "nombre": "Agua pequeña", "descripcion": "", "precio": 1.5 },
-        { "nombre": "Agua grande", "descripcion": "", "precio": 2.8 },
-        { "nombre": "Agua con gas", "descripcion": "", "precio": 2.2 },
-        { "nombre": "Cañón", "descripcion": "", "precio": 2.8 },
-        { "nombre": "Doble", "descripcion": "", "precio": 2.5 },
-        { "nombre": "Caña", "descripcion": "", "precio": 1.6 },
-        { "nombre": "Botellín 1/3", "descripcion": "", "precio": 2.8 },
-        { "nombre": "Cubo", "descripcion": "5 botellines de 1/4", "precio": 7.5 },
-        { "nombre": "Botellín 1/4", "descripcion": "", "precio": 1.7 },
-        { "nombre": "Alhambra 1/3", "descripcion": "", "precio": 3 },
-        { "nombre": "Copa de vino del año", "descripcion": "", "precio": 2.2 },
-        { "nombre": "Copa de vino crianza", "descripcion": "", "precio": 2.5 },
-        { "nombre": "Copa de vino blanco Rueda", "descripcion": "", "precio": 2.2 },
-        { "nombre": "Cava", "descripcion": "", "precio": 4 },
-        { "nombre": "Tinto de verano", "descripcion": "", "precio": 3.5 },
-        { "nombre": "Cubata", "descripcion": "", "precio": 7.5 },
-        { "nombre": "Cubata RedBull", "descripcion": "", "precio": 8.5 },
-        { "nombre": "Cubata especial", "descripcion": "", "precio": 9 },
-        { "nombre": "Chupito", "descripcion": "", "precio": 2.5 },
-        { "nombre": "Copa de licor", "descripcion": "", "precio": 5 }
+        {
+          "nombre": "Zumos",
+          "descripcion": "Piña, naranja, melocotón, tomate o mosto",
+          "precio": 2.2
+        },
+        {
+          "nombre": "Refrescos",
+          "descripcion": "Coca-Cola, Coca-Cola Zero, Nestea, Aquarius o Fanta",
+          "precio": 2.2
+        },
+        {
+          "nombre": "RedBull",
+          "descripcion": "",
+          "precio": 3.2
+        },
+        {
+          "nombre": "Agua pequeña",
+          "descripcion": "",
+          "precio": 1.5
+        },
+        {
+          "nombre": "Agua grande",
+          "descripcion": "",
+          "precio": 2.8
+        },
+        {
+          "nombre": "Agua con gas",
+          "descripcion": "",
+          "precio": 2.2
+        },
+        {
+          "nombre": "Cañón",
+          "descripcion": "",
+          "precio": 2.8
+        },
+        {
+          "nombre": "Doble",
+          "descripcion": "",
+          "precio": 2.5
+        },
+        {
+          "nombre": "Caña",
+          "descripcion": "",
+          "precio": 1.6
+        },
+        {
+          "nombre": "Botellín 1/3",
+          "descripcion": "",
+          "precio": 2.8
+        },
+        {
+          "nombre": "Cubo",
+          "descripcion": "5 botellines de 1/4",
+          "precio": 7.5
+        },
+        {
+          "nombre": "Botellín 1/4",
+          "descripcion": "",
+          "precio": 1.7
+        },
+        {
+          "nombre": "Alhambra 1/3",
+          "descripcion": "",
+          "precio": 3
+        },
+        {
+          "nombre": "Copa de vino del año",
+          "descripcion": "",
+          "precio": 2.2
+        },
+        {
+          "nombre": "Copa de vino crianza",
+          "descripcion": "",
+          "precio": 2.5
+        },
+        {
+          "nombre": "Copa de vino blanco Rueda",
+          "descripcion": "",
+          "precio": 2.2
+        },
+        {
+          "nombre": "Cava",
+          "descripcion": "",
+          "precio": 4
+        },
+        {
+          "nombre": "Tinto de verano",
+          "descripcion": "",
+          "precio": 3.5
+        },
+        {
+          "nombre": "Cubata",
+          "descripcion": "",
+          "precio": 7.5
+        },
+        {
+          "nombre": "Cubata RedBull",
+          "descripcion": "",
+          "precio": 8.5
+        },
+        {
+          "nombre": "Cubata especial",
+          "descripcion": "",
+          "precio": 9
+        },
+        {
+          "nombre": "Chupito",
+          "descripcion": "",
+          "precio": 2.5
+        },
+        {
+          "nombre": "Copa de licor",
+          "descripcion": "",
+          "precio": 5
+        }
       ]
     }
   ]

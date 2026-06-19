@@ -63,7 +63,7 @@
           }
           
           var navHeight = nav.offsetHeight || 58;
-          var targetTop = targetSection.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+          var targetTop = targetSection.getBoundingClientRect().top + window.scrollY - navHeight - 12;
           
           window.scrollTo({
             top: targetTop,
@@ -92,12 +92,34 @@
 
     linea.appendChild(nombre);
     linea.appendChild(crear("span", "plato__puntos"));
-    linea.appendChild(crear("span", "plato__precio", formatearPrecio(item.precio)));
+
+    var precioTexto = "";
+    if (item.precio !== null && item.precio !== undefined) {
+      precioTexto = formatearPrecio(item.precio);
+    } else if (item.precioTexto) {
+      precioTexto = item.precioTexto;
+    }
+    linea.appendChild(crear("span", "plato__precio", precioTexto));
     plato.appendChild(linea);
 
     if (item.descripcion) {
       plato.appendChild(crear("p", "plato__descripcion", item.descripcion));
     }
+
+    if (item.alergenos && item.alergenos.length) {
+      var alergenosCont = crear("div", "plato__alergenos");
+      item.alergenos.forEach(function (key) {
+        var al = MENU.alergenos[key];
+        if (al) {
+          var badge = crear("span", "alergeno-badge alergeno-badge--" + key, al.simbolo);
+          badge.title = al.nombre;
+          badge.setAttribute("aria-label", "Alérgeno: " + al.nombre);
+          alergenosCont.appendChild(badge);
+        }
+      });
+      plato.appendChild(alergenosCont);
+    }
+
     return plato;
   }
 
@@ -208,6 +230,39 @@
     actualizarScrollspy();
   }
 
+  function renderizarLeyendaAlergenos() {
+    var contenedor = crear("section", "seccion seccion--leyenda");
+    contenedor.id = "leyenda-alergenos";
+
+    var cabecera = crear("div", "seccion__cabecera");
+    cabecera.appendChild(crear("span", "seccion__vineta"));
+    cabecera.appendChild(crear("h2", "seccion__titulo", "Leyenda de Alérgenos"));
+    contenedor.appendChild(cabecera);
+
+    var intro = crear("p", "seccion__intro", "Consulte los alérgenos presentes en nuestros platos y bebidas:");
+    contenedor.appendChild(intro);
+
+    if (MENU.alergenos) {
+      var grid = crear("div", "leyenda-grid");
+      Object.keys(MENU.alergenos).forEach(function (key) {
+        var al = MENU.alergenos[key];
+        var item = crear("div", "leyenda-item");
+
+        var badge = crear("span", "alergeno-badge alergeno-badge--" + key, al.simbolo);
+        badge.title = al.nombre;
+
+        var nombre = crear("span", "leyenda-nombre", al.nombre);
+
+        item.appendChild(badge);
+        item.appendChild(nombre);
+        grid.appendChild(item);
+      });
+      contenedor.appendChild(grid);
+    }
+
+    return contenedor;
+  }
+
   function iniciar() {
     var secciones = MENU.secciones;
     renderizarCabeceraYPie();
@@ -217,6 +272,10 @@
     secciones.forEach(function (seccion) {
       carta.appendChild(renderizarSeccion(seccion));
     });
+
+    if (MENU.alergenos) {
+      carta.appendChild(renderizarLeyendaAlergenos());
+    }
 
     activarSeguimientoNavegacion();
   }
