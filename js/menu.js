@@ -114,7 +114,7 @@ const MENU = {
         { "nombre": "Coulant de chocolate", "descripcion": "Con helado de pistacho", "precio": 4, "alergenos": ["gluten", "lacteos", "huevo", "frutos_secos", "soja"] },
         { "nombre": "Panna cotta con frutos rojos", "descripcion": "", "precio": 4, "alergenos": ["lacteos"], disponible: false },
         { "nombre": "Ensalada de frutas con helado de mandarina", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["lacteos"] },
-        { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [] }
+        { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], disponible: false }
       ]
     },
  
