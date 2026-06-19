@@ -45,7 +45,7 @@ const MENU = {
       titulo: "Picoteo",
       items: [
         { "nombre": "Nugets karagee", "descripcion": "Al estilo japonés con mayonesa cítrica", "precio": 8.5, "alergenos": ["gluten", "huevo", "soja"] },
-        { "nombre": "Lágrimas de pollo", "descripcion": "Con mayonesa de ajo asado", "precio": 8.5, "alergenos": ["gluten", "huevo"] },
+        { "nombre": "Lágrimas de pollo", "descripcion": "Con mayonesa de ajo asado", "precio": 8.5, "alergenos": ["gluten", "huevo", "soja"] },
         { "nombre": "Patatas bravas", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["huevo"] },
         { "nombre": "Patatas con mayo", "descripcion": "Con mayo de ajo asado o mayo trufada", "precio": 5, "tags": ["veggie"], "alergenos": ["huevo"] },
         { "nombre": "Tempura de verduras", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["gluten"] },
@@ -64,7 +64,7 @@ const MENU = {
         { "nombre": "Hamburguesa Chavela", "descripcion": "Con carne de ternera de Ávila, queso, mezclum, tomate, pepinillos y mostaza", "precio": 9, "alergenos": ["gluten", "lacteos", "huevo", "mostaza", "sulfitos"] },
         { "nombre": "Hamburguesa Cofío", "descripcion": "Con carne de ternera de Ávila, queso, huevo, beicon y cebolla caramelizada", "precio": 11.5, "alergenos": ["gluten", "lacteos", "huevo", "sulfitos"] },
         { "nombre": "Hamburguesa La Suiza", "descripcion": "Con carne de ternera de Ávila, queso raclette y mayonesa trufada", "precio": 12, "alergenos": ["gluten", "lacteos", "huevo"] },
-        { "nombre": "Hamburguesa Pollo", "descripcion": "Con pollo empanado, queso, cebolla pochada, lechuga y tomate", "precio": 8.5, "alergenos": ["gluten", "lacteos", "huevo"] }
+        { "nombre": "Hamburguesa Pollo", "descripcion": "Con pollo empanado, queso, cebolla pochada, lechuga y tomate", "precio": 8.5, "alergenos": ["gluten", "lacteos", "huevo", "soja"] }
       ]
     },
  
@@ -74,7 +74,7 @@ const MENU = {
       items: [
         { "nombre": "Mezclum rulo de cabra", "descripcion": "Con cebolla caramelizada, nueces y beicon", "precio": 6.5, "alergenos": ["lacteos", "frutos_secos", "sulfitos"] },
         { "nombre": "Mezclum pollo frito", "descripcion": "Con queso parmesano, nueces y cebolla caramelizada", "precio": 7, "alergenos": ["gluten", "lacteos", "frutos_secos", "huevo"] },
-        { "nombre": "Tomate, ventresca, limón, piparras y mezclum", "descripcion": "", "precio": 12.5, "alergenos": ["pescado"] },
+        { "nombre": "Tomate, ventresca, limón, piparras y mezclum", "descripcion": "", "precio": 12.5, "alergenos": ["pescado"], disponible: false },
         { "nombre": "Tomate, burrata, albahaca, limón, nueces y mezclum", "descripcion": "", "precio": 11, "tags": ["veggie"], "alergenos": ["lacteos", "frutos_secos"] }
       ]
     },
@@ -103,7 +103,7 @@ const MENU = {
         { "nombre": "Pollo milanesa", "descripcion": "Con salsa de tomate, queso, patatas y ensalada", "precio": 7.5, "alergenos": ["gluten", "lacteos", "huevo"] },
         { "nombre": "Filete de ternera de Ávila", "descripcion": "Con huevo, patatas y ensalada", "precio": 12.5, "alergenos": ["huevo"] },
         { "nombre": "Salchicha fresca", "descripcion": "Con huevo, patatas y ensalada", "precio": 7.5, "alergenos": ["sulfitos"] },
-        { "nombre": "Plato del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [] }
+        { "nombre": "Plato del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], disponible: false }
       ]
     },
  
@@ -112,7 +112,7 @@ const MENU = {
       titulo: "Postres",
       items: [
         { "nombre": "Coulant de chocolate", "descripcion": "Con helado de pistacho", "precio": 4, "alergenos": ["gluten", "lacteos", "huevo", "frutos_secos", "soja"] },
-        { "nombre": "Panna cotta con frutos rojos", "descripcion": "", "precio": 4, "alergenos": ["lacteos"] },
+        { "nombre": "Panna cotta con frutos rojos", "descripcion": "", "precio": 4, "alergenos": ["lacteos"], disponible: false },
         { "nombre": "Ensalada de frutas con helado de mandarina", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["lacteos"] },
         { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [] }
       ]
