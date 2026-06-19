@@ -25,22 +25,17 @@ const MENU = {
     avisoApertura: "Abierto todos los días"
   },
  
-  /* Catálogo de los 14 alérgenos: código -> símbolo + nombre.
+  /* Catálogo de los alérgenos presentes en la carta: código -> símbolo + nombre.
      El "simbolo" es el emoji que caracteriza al alérgeno. */
   alergenos: {
     gluten:       { simbolo: "🌾", nombre: "Gluten" },
-    crustaceos:   { simbolo: "🦐", nombre: "Crustáceos" },
     huevo:        { simbolo: "🥚", nombre: "Huevo" },
     pescado:      { simbolo: "🐟", nombre: "Pescado" },
-    cacahuetes:   { simbolo: "🥜", nombre: "Cacahuetes" },
     soja:         { simbolo: "🫛", nombre: "Soja" },
     lacteos:      { simbolo: "🥛", nombre: "Lácteos" },
     frutos_secos: { simbolo: "🌰", nombre: "Frutos de cáscara" },
-    apio:         { simbolo: "🥬", nombre: "Apio" },
     mostaza:      { simbolo: "🫙", nombre: "Mostaza" },
-    sesamo:       { simbolo: "🥯", nombre: "Sésamo" },
     sulfitos:     { simbolo: "🍷", nombre: "Sulfitos" },
-    altramuces:   { simbolo: "🌼", nombre: "Altramuces" },
     moluscos:     { simbolo: "🦪", nombre: "Moluscos" }
   },
  
