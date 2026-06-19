@@ -1,28 +1,14 @@
-/* ============================================================
-   EL CHIRINGUITO DEL COFIO — Datos de la carta
-   ------------------------------------------------------------
-   Este archivo es la ÚNICA fuente de datos de la web.
-   Para cambiar la carta, edita solo este archivo:
-
-   - Cambiar un precio  -> edita el número "precio"
-   - Quitar un plato    -> pon "disponible: false" (o borra la línea)
-   - Añadir un plato    -> copia un objeto { ... } y cámbialo
-   - Añadir una sección -> copia un bloque de "secciones"
-
-   Etiquetas (tags) admitidas: "vegana", "veggie", "singluten"
-   ============================================================ */
-
-const MENU = {
-  local: {
-    nombre: "Chiringuito del Río Cofío",
-    lema: "Comida, tapas, cócteles y más",
-    direccion: "Urb. Río Cofio · C/ Península, 11 · 28294 Robledo de Chavela (Madrid)",
-    mapsUrl: "https://maps.google.com/?q=Piscina+Urbanizacion+Rio+Cofio+Robledo+de+Chavela",
-    horarios: [
-      { dias: "Domingo a jueves", horas: "11:00 – 24:00" },
-      { dias: "Viernes y sábado", horas: "11:00 – 01:00" }
+{
+  "local": {
+    "nombre": "Chiringuito del Río Cofio",
+    "lema": "Comida, tapas, cócteles y más",
+    "instagram": "@chiringuito_riocofio",
+    "direccion": "Urb. Río Cofio · C/ Península, 11 · 28294 Robledo de Chavela (Madrid)",
+    "mapsUrl": "https://maps.google.com/?q=Calle+Pen%C3%ADnsula+11,+28294+Robledo+de+Chavela",
+    "horarios": [
+      { "dias": "Todos los días", "horas": "11:00 – 24:00" }
     ],
-    avisoApertura: "Abierto todos los días"
+    "avisoApertura": "Abierto todos los días"
   },
 
   "secciones": [
@@ -159,4 +145,4 @@ const MENU = {
       ]
     }
   ]
-};
+}
