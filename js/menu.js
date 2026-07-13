@@ -73,9 +73,9 @@ const MENU = {
       titulo: "Ensaladas",
       items: [
         { "nombre": "Mezclum rulo de cabra", "descripcion": "Con cebolla caramelizada, nueces y beicon", "precio": 7.5, "alergenos": ["lacteos", "frutos_secos", "sulfitos"] },
-        { "nombre": "Mezclum pollo frito", "descripcion": "Con queso parmesano, nueces y cebolla caramelizada", "precio": 7.5, "alergenos": ["gluten", "lacteos", "frutos_secos", "huevo"] },
-        { "nombre": "Tomate, atún, limón, piparras, anchoas y mezclum", "descripcion": "", "precio": 10, "alergenos": ["pescado"] },
-        { "nombre": "Tomate, burrata, albahaca, limón, nueces y mezclum", "descripcion": "", "precio": 11, "tags": ["veggie"], "alergenos": ["lacteos", "frutos_secos"] }
+        { "nombre": "Mezclum pollo frito", "descripcion": "Con queso parmesano, nueces y cebolla caramelizada", "precio": 7.5, "alergenos": ["gluten", "lacteos", "frutos_secos", "huevo", "sulfitos"] },
+        { "nombre": "Tomate, atún, limón, piparras, anchoas y mezclum", "descripcion": "", "precio": 10, "alergenos": ["pescado", "sulfitos"] },
+        { "nombre": "Tomate, burrata, albahaca, limón, nueces y mezclum", "descripcion": "", "precio": 11, "tags": ["veggie"], "alergenos": ["lacteos", "frutos_secos", "sulfitos"] }
       ]
     },
  
