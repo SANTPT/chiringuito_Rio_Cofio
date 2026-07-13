@@ -61,7 +61,7 @@ const MENU = {
       nota: "Estos productos pueden pedirse con pan sin gluten por 0,50 €",
       items: [
         { "nombre": "Hamburguesa vegana Heura", "descripcion": "Con cebolla caramelizada, mezclum, tomate y piperrada", "precio": 12, "tags": ["veggie"], "alergenos": ["gluten", "soja"] },
-        { "nombre": "Hamburguesa Chavela", "descripcion": "Con carne de ternera de Ávila, queso, mezclum, tomate, pepinillos y mostaza", "precio": 9, "alergenos": ["gluten", "lacteos", "huevo", "mostaza", "sulfitos"] },
+        { "nombre": "Hamburguesa Chavela", "descripcion": "Con carne de ternera de Ávila, queso, mezclum, tomate, pepinillos y mostaza", "precio": 9.5, "alergenos": ["gluten", "lacteos", "huevo", "mostaza", "sulfitos"] },
         { "nombre": "Hamburguesa Cofío", "descripcion": "Con carne de ternera de Ávila, queso, huevo, beicon y cebolla caramelizada", "precio": 11.5, "alergenos": ["gluten", "lacteos", "huevo", "sulfitos"] },
         { "nombre": "Hamburguesa La Suiza", "descripcion": "Con carne de ternera de Ávila, queso raclette y mayonesa trufada", "precio": 12, "alergenos": ["gluten", "lacteos", "huevo"] },
         { "nombre": "Hamburguesa Pollo", "descripcion": "Con pollo empanado, queso, cebolla pochada, lechuga y tomate", "precio": 8.5, "alergenos": ["gluten", "lacteos", "huevo", "soja"] }
@@ -72,9 +72,9 @@ const MENU = {
       id: "ensaladas",
       titulo: "Ensaladas",
       items: [
-        { "nombre": "Mezclum rulo de cabra", "descripcion": "Con cebolla caramelizada, nueces y beicon", "precio": 6.5, "alergenos": ["lacteos", "frutos_secos", "sulfitos"] },
-        { "nombre": "Mezclum pollo frito", "descripcion": "Con queso parmesano, nueces y cebolla caramelizada", "precio": 7, "alergenos": ["gluten", "lacteos", "frutos_secos", "huevo"] },
-        { "nombre": "Tomate, ventresca, limón, piparras y mezclum", "descripcion": "", "precio": 12.5, "alergenos": ["pescado"], disponible: false },
+        { "nombre": "Mezclum rulo de cabra", "descripcion": "Con cebolla caramelizada, nueces y beicon", "precio": 7.5, "alergenos": ["lacteos", "frutos_secos", "sulfitos"] },
+        { "nombre": "Mezclum pollo frito", "descripcion": "Con queso parmesano, nueces y cebolla caramelizada", "precio": 7.5, "alergenos": ["gluten", "lacteos", "frutos_secos", "huevo"] },
+        { "nombre": "Tomate, atún, limón, piparras, anchoas y mezclum", "descripcion": "", "precio": 10, "alergenos": ["pescado"] },
         { "nombre": "Tomate, burrata, albahaca, limón, nueces y mezclum", "descripcion": "", "precio": 11, "tags": ["veggie"], "alergenos": ["lacteos", "frutos_secos"] }
       ]
     },
@@ -85,9 +85,9 @@ const MENU = {
       nota: "Estos productos pueden pedirse con pan sin gluten por 0,50 €",
       items: [
         { "nombre": "Pollo vegano Heura", "descripcion": "Con piperrada y mayo de ajo asado", "precio": 11.5, "tags": ["veggie"], "alergenos": ["gluten", "soja", "huevo"] },
-        { "nombre": "Calamares frescos", "descripcion": "Rebozados al momento con perejil, limón y mayo de ajo asado", "precio": 7.5, "alergenos": ["gluten", "moluscos", "huevo"] },
+        { "nombre": "Calamares frescos", "descripcion": "Rebozados al momento con perejil, limón y mayo de ajo asado", "precio": 8.5, "alergenos": ["gluten", "moluscos", "huevo"] },
         { "nombre": "Salchicha fresca", "descripcion": "Con cebolla caramelizada y queso cheddar", "precio": 8, "alergenos": ["gluten", "lacteos", "sulfitos"] },
-        { "nombre": "Pulled pork", "descripcion": "Con cebolla caramelizada y queso cheddar", "precio": 6.5, "alergenos": ["gluten", "lacteos", "sulfitos"] },
+        { "nombre": "Pulled pork", "descripcion": "Con cebolla caramelizada y queso cheddar", "precio": 7.5, "alergenos": ["gluten", "lacteos", "sulfitos"] },
         { "nombre": "Pollo trufado", "descripcion": "Con queso parmesano, mezclum, mayo trufada y huevo", "precio": 10, "alergenos": ["gluten", "lacteos", "huevo"] },
         { "nombre": "Pollo milanesa", "descripcion": "Con queso cheddar, tomate asado y mayo de ajo asado", "precio": 9, "alergenos": ["gluten", "lacteos", "huevo"] },
         { "nombre": "Pollo cabra", "descripcion": "Con queso de cabra, beicon y cebolla caramelizada", "precio": 8, "alergenos": ["gluten", "lacteos", "sulfitos"] }
@@ -100,9 +100,9 @@ const MENU = {
       items: [
         { "nombre": "Pollo vegano Heura", "descripcion": "Con piperrada, patatas y ensalada", "precio": 13.5, "tags": ["veggie"], "alergenos": ["soja"] },
         { "nombre": "Pollo a la plancha", "descripcion": "Con huevo, patatas y ensalada", "precio": 8.5, "alergenos": ["huevo"] },
-        { "nombre": "Pollo milanesa", "descripcion": "Con salsa de tomate, queso, patatas y ensalada", "precio": 7.5, "alergenos": ["gluten", "lacteos", "huevo"] },
+        { "nombre": "Pollo milanesa", "descripcion": "Con salsa de tomate, queso, patatas y ensalada", "precio": 8.5, "alergenos": ["gluten", "lacteos", "huevo"] },
         { "nombre": "Filete de ternera de Ávila", "descripcion": "Con huevo, patatas y ensalada", "precio": 12.5, "alergenos": ["huevo"] },
-        { "nombre": "Salchicha fresca", "descripcion": "Con huevo, patatas y ensalada", "precio": 7.5, "alergenos": ["sulfitos"] },
+        { "nombre": "Salchicha fresca", "descripcion": "Con huevo, patatas y ensalada", "precio": 8.5, "alergenos": ["sulfitos"] },
         { "nombre": "Plato del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], disponible: false }
       ]
     },
@@ -111,8 +111,8 @@ const MENU = {
       id: "postres",
       titulo: "Postres",
       items: [
-        { "nombre": "Coulant de chocolate", "descripcion": "Con helado de pistacho", "precio": 4, "alergenos": ["gluten", "lacteos", "huevo", "frutos_secos", "soja"] },
-        { "nombre": "Panna cotta con frutos rojos", "descripcion": "", "precio": 4, "alergenos": ["lacteos"], disponible: false },
+        { "nombre": "Coulant de chocolate", "descripcion": "Con helado de pistacho", "precio": 5, "alergenos": ["gluten", "lacteos", "huevo", "frutos_secos", "soja"] },
+        { "nombre": "Panna cotta con frutos rojos", "descripcion": "", "precio": 5, "alergenos": ["lacteos"], disponible: false },
         { "nombre": "Ensalada de frutas con helado de mandarina", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["lacteos"] },
         { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], disponible: false }
       ]
@@ -122,7 +122,8 @@ const MENU = {
       id: "cocteles",
       titulo: "Cócteles",
       items: [
-        { "nombre": "Vermut preparado", "descripcion": "Vermut rojo, Campari, ginebra y angostura", "precio": 6.5, "alergenos": [] },
+        { "nombre": "Caipiriña", "descripcion": "Cachaça y Lima", "precio": 7.5, "alergenos": [] },
+        { "nombre": "Vermut preparado", "descripcion": "Vermut rojo, Campari, ginebra y angostura", "precio": 5, "alergenos": [] },
         { "nombre": "Margarita", "descripcion": "Tequila, zumo de limón y triple sec", "precio": 7.5, "alergenos": [] },
         { "nombre": "Aperol Spritz", "descripcion": "Aperol, prosecco y soda", "precio": 7.5, "alergenos": [] },
         { "nombre": "Mojito", "descripcion": "Ron blanco, zumo de lima, menta, azúcar morena y soda", "precio": 8, "alergenos": [] },
