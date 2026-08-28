@@ -24,61 +24,61 @@ const MENU = {
     ],
     avisoApertura: "Abierto todos los días"
   },
- 
+
   /* Catálogo de los alérgenos presentes en la carta: código -> símbolo + nombre.
      El "simbolo" es el emoji que caracteriza al alérgeno. */
   alergenos: {
-    gluten:       { simbolo: "🌾", nombre: "Gluten" },
-    huevo:        { simbolo: "🥚", nombre: "Huevo" },
-    pescado:      { simbolo: "🐟", nombre: "Pescado" },
-    soja:         { simbolo: "🫛", nombre: "Soja" },
-    lacteos:      { simbolo: "🥛", nombre: "Lácteos" },
+    gluten: { simbolo: "🌾", nombre: "Gluten" },
+    huevo: { simbolo: "🥚", nombre: "Huevo" },
+    pescado: { simbolo: "🐟", nombre: "Pescado" },
+    soja: { simbolo: "🫛", nombre: "Soja" },
+    lacteos: { simbolo: "🥛", nombre: "Lácteos" },
     frutos_secos: { simbolo: "🌰", nombre: "Frutos de cáscara" },
-    mostaza:      { simbolo: "🫙", nombre: "Mostaza" },
-    sulfitos:     { simbolo: "🍷", nombre: "Sulfitos" },
-    moluscos:     { simbolo: "🦪", nombre: "Moluscos" }
+    mostaza: { simbolo: "🫙", nombre: "Mostaza" },
+    sulfitos: { simbolo: "🍷", nombre: "Sulfitos" },
+    moluscos: { simbolo: "🦪", nombre: "Moluscos" }
   },
- 
+
   secciones: [
     {
       id: "picoteo",
       titulo: "Picoteo",
       items: [
-        { "nombre": "Nugets karagee", "descripcion": "Al estilo japonés con mayonesa cítrica", "precio": 8.5, "alergenos": ["gluten", "huevo", "soja"] },
+        { "nombre": "Nugets karagee", "descripcion": "Al estilo japonés con mayonesa cítrica", "precio": 8.5, "disponible": false, "alergenos": ["gluten", "huevo", "soja"] },
         { "nombre": "Lágrimas de pollo", "descripcion": "Con mayonesa de ajo asado", "precio": 8.5, "alergenos": ["gluten", "huevo", "soja"] },
         { "nombre": "Patatas bravas", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["huevo"] },
         { "nombre": "Patatas con mayo", "descripcion": "Con mayo de ajo asado o mayo trufada", "precio": 5, "tags": ["veggie"], "alergenos": ["huevo"] },
         { "nombre": "Tempura de verduras", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["gluten"] },
         { "nombre": "Nachos", "descripcion": "Con queso, guacamole y pico de gallo", "precio": 10, "alergenos": ["lacteos"] },
-        { "nombre": "Tabla de embutidos", "descripcion": "", "precio": 12, "alergenos": ["sulfitos"] },
+        { "nombre": "Tabla de embutidos", "descripcion": "", "precio": 12, "disponible": false, "alergenos": ["sulfitos"] },
         { "nombre": "Croquetas", "descripcion": "A elegir entre jamón, boletus, chipirones o rabo de toro", "precio": 7, "alergenos": ["gluten", "lacteos", "huevo"] }
       ]
     },
- 
+
     {
       id: "hamburguesas",
       titulo: "Hamburguesas",
       nota: "Estos productos pueden pedirse con pan sin gluten por 0,50 €",
       items: [
-        { "nombre": "Hamburguesa vegana Heura", "descripcion": "Con cebolla caramelizada, mezclum, tomate y piperrada", "precio": 12, "tags": ["veggie"], "alergenos": ["gluten", "soja"] },
+        { "nombre": "Hamburguesa vegana Heura", "descripcion": "Con cebolla caramelizada, mezclum, tomate y piperrada", "precio": 12, "tags": ["veggie"], disponible: false, "alergenos": ["gluten", "soja0"] },
         { "nombre": "Hamburguesa Chavela", "descripcion": "Con carne de ternera de Ávila, queso, mezclum, tomate, pepinillos y mostaza", "precio": 9.5, "alergenos": ["gluten", "lacteos", "huevo", "mostaza", "sulfitos"] },
         { "nombre": "Hamburguesa Cofío", "descripcion": "Con carne de ternera de Ávila, queso, huevo, beicon y cebolla caramelizada", "precio": 11.5, "alergenos": ["gluten", "lacteos", "huevo", "sulfitos"] },
         { "nombre": "Hamburguesa La Suiza", "descripcion": "Con carne de ternera de Ávila, queso raclette y mayonesa trufada", "precio": 12, "alergenos": ["gluten", "lacteos", "huevo"] },
-        { "nombre": "Hamburguesa Pollo", "descripcion": "Con pollo empanado, queso, cebolla pochada, lechuga y tomate", "precio": 8.5, "alergenos": ["gluten", "lacteos", "huevo", "soja"] }
+        { "nombre": "Hamburguesa Pollo", "descripcion": "Con pollo empanado, queso, cebolla pochada, lechuga y tomate", "precio": 8.5, disponible: false, "alergenos": ["gluten", "lacteos", "huevo", "soja"] }
       ]
     },
- 
+
     {
       id: "ensaladas",
       titulo: "Ensaladas",
       items: [
         { "nombre": "Mezclum rulo de cabra", "descripcion": "Con cebolla caramelizada, nueces y beicon", "precio": 7.5, "alergenos": ["lacteos", "frutos_secos", "sulfitos"] },
         { "nombre": "Mezclum pollo frito", "descripcion": "Con queso parmesano, nueces y cebolla caramelizada", "precio": 7.5, "alergenos": ["gluten", "lacteos", "frutos_secos", "huevo", "sulfitos"] },
-        { "nombre": "Tomate, atún, limón, piparras, anchoas y mezclum", "descripcion": "", "precio": 10, "alergenos": ["pescado", "sulfitos"] },
+        { "nombre": "Tomate, atún, limón, aceitunas, anchoas y mezclum", "descripcion": "", "precio": 10, "alergenos": ["pescado", "sulfitos"] },
         { "nombre": "Tomate, burrata, albahaca, limón, nueces y mezclum", "descripcion": "", "precio": 11, "tags": ["veggie"], "alergenos": ["lacteos", "frutos_secos", "sulfitos"] }
       ]
     },
- 
+
     {
       id: "bocadillos",
       titulo: "Bocadillos",
@@ -86,38 +86,31 @@ const MENU = {
       items: [
         { "nombre": "Pollo vegano Heura", "descripcion": "Con piperrada y mayo de ajo asado", "precio": 11.5, "tags": ["veggie"], "alergenos": ["gluten", "soja", "huevo"] },
         { "nombre": "Calamares frescos", "descripcion": "Rebozados al momento con perejil, limón y mayo de ajo asado", "precio": 8.5, "alergenos": ["gluten", "moluscos", "huevo"] },
-        { "nombre": "Salchicha fresca", "descripcion": "Con cebolla caramelizada y queso cheddar", "precio": 8, "alergenos": ["gluten", "lacteos", "sulfitos"] },
         { "nombre": "Pulled pork", "descripcion": "Con cebolla caramelizada y queso cheddar", "precio": 7.5, "alergenos": ["gluten", "lacteos", "sulfitos"] },
         { "nombre": "Pollo trufado", "descripcion": "Con queso parmesano, mezclum, mayo trufada y huevo", "precio": 10, "alergenos": ["gluten", "lacteos", "huevo"] },
-        { "nombre": "Pollo milanesa", "descripcion": "Con queso cheddar, tomate asado y mayo de ajo asado", "precio": 9, "alergenos": ["gluten", "lacteos", "huevo"] },
         { "nombre": "Pollo cabra", "descripcion": "Con queso de cabra, beicon y cebolla caramelizada", "precio": 8, "alergenos": ["gluten", "lacteos", "sulfitos"] }
       ]
     },
- 
+
     {
       id: "platos",
       titulo: "Platos",
       items: [
         { "nombre": "Pollo vegano Heura", "descripcion": "Con piperrada, patatas y ensalada", "precio": 13.5, "tags": ["veggie"], "alergenos": ["soja"] },
         { "nombre": "Pollo a la plancha", "descripcion": "Con huevo, patatas y ensalada", "precio": 8.5, "alergenos": ["huevo"] },
-        { "nombre": "Pollo milanesa", "descripcion": "Con salsa de tomate, queso, patatas y ensalada", "precio": 8.5, "alergenos": ["gluten", "lacteos", "huevo"] },
-        { "nombre": "Filete de ternera de Ávila", "descripcion": "Con huevo, patatas y ensalada", "precio": 12.5, "alergenos": ["huevo"] },
-        { "nombre": "Salchicha fresca", "descripcion": "Con huevo, patatas y ensalada", "precio": 8.5, "alergenos": ["sulfitos"] },
         { "nombre": "Plato del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], disponible: false }
       ]
     },
- 
+
     {
       id: "postres",
       titulo: "Postres",
       items: [
         { "nombre": "Coulant de chocolate", "descripcion": "Con helado de pistacho", "precio": 5, "alergenos": ["gluten", "lacteos", "huevo", "frutos_secos", "soja"] },
-        { "nombre": "Panna cotta con frutos rojos", "descripcion": "", "precio": 5, "alergenos": ["lacteos"], disponible: false },
-        { "nombre": "Ensalada de frutas con helado de mandarina", "descripcion": "", "precio": 5, "tags": ["veggie"], "alergenos": ["lacteos"] },
         { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], disponible: false }
       ]
     },
- 
+
     {
       id: "cocteles",
       titulo: "Cócteles",
@@ -127,13 +120,12 @@ const MENU = {
         { "nombre": "Margarita", "descripcion": "Tequila, zumo de limón y triple sec", "precio": 7.5, "alergenos": [] },
         { "nombre": "Aperol Spritz", "descripcion": "Aperol, prosecco y soda", "precio": 7.5, "alergenos": [] },
         { "nombre": "Mojito", "descripcion": "Ron blanco, zumo de lima, menta, azúcar morena y soda", "precio": 8, "alergenos": [] },
-        { "nombre": "Piña colada", "descripcion": "Ron blanco, zumo de piña y crema de coco", "precio": 8, "alergenos": [] },
         { "nombre": "Destornillador", "descripcion": "Vodka, zumo de naranja y soda de naranja", "precio": 8, "alergenos": [] },
         { "nombre": "Bloody Mary", "descripcion": "Vodka, zumo de tomate y naranja, Tabasco y Worcestershire", "precio": 8, "alergenos": [] },
         { "nombre": "Tequila sunrise", "descripcion": "Tequila, zumo de naranja y granadina", "precio": 8, "alergenos": [] }
       ]
     },
- 
+
     {
       id: "cocteles-sin",
       titulo: "Cócteles sin alcohol",
@@ -143,24 +135,21 @@ const MENU = {
         { "nombre": "Limonada casera", "descripcion": "Con un toque de menta y soda", "precio": 4, "alergenos": [] }
       ]
     },
- 
+
     {
       id: "bebidas",
       titulo: "Bebidas",
       items: [
-        { "nombre": "Zumos", "descripcion": "Piña, naranja, melocotón, tomate o mosto", "precio": 2.2, "alergenos": [] },
-        { "nombre": "Refrescos", "descripcion": "Coca-Cola, Coca-Cola Zero, Nestea, Aquarius o Fanta", "precio": 2.2, "alergenos": [] },
+        { "nombre": "Zumos", "descripcion": " Tomate o Mººosto", "precio": 2.4, "alergenos": [] },
+        { "nombre": "Refrescos", "descripcion": "Coca-Cola, Coca-Cola Zero, Nestea, Aquarius o Fanta", "precio": 2.4, "alergenos": [] },
         { "nombre": "RedBull", "descripcion": "", "precio": 3.2, "alergenos": [] },
         { "nombre": "Agua pequeña", "descripcion": "", "precio": 1.5, "alergenos": [] },
         { "nombre": "Agua grande", "descripcion": "", "precio": 2.8, "alergenos": [] },
-        { "nombre": "Agua con gas", "descripcion": "", "precio": 2.2, "alergenos": [] },
-        { "nombre": "Cañón", "descripcion": "", "precio": 2.8, "alergenos": [] },
-        { "nombre": "Doble", "descripcion": "", "precio": 2.5, "alergenos": [] },
-        { "nombre": "Caña", "descripcion": "", "precio": 1.6, "alergenos": [] },
-        { "nombre": "Botellín 1/3", "descripcion": "", "precio": 2.8, "alergenos": [] },
+        { "nombre": "Agua con gas", "descripcion": "", "precio": 2.4, "alergenos": [] },
+        { "nombre": "Botellín 1/3", "descripcion": "", "precio": 3.0, "alergenos": [] },
         { "nombre": "Cubo", "descripcion": "5 botellines de 1/4", "precio": 7.5, "alergenos": [] },
-        { "nombre": "Botellín 1/4", "descripcion": "", "precio": 1.7, "alergenos": [] },
-        { "nombre": "Alhambra 1/3", "descripcion": "", "precio": 3, "alergenos": [] },
+        { "nombre": "Botellín 1/4", "descripcion": "", "precio": 1.9, "alergenos": [] },
+        { "nombre": "1906", "descripcion": "", "precio": 3.2, "alergenos": [] },
         { "nombre": "Copa de vino del año", "descripcion": "", "precio": 2.2, "alergenos": [] },
         { "nombre": "Copa de vino crianza", "descripcion": "", "precio": 2.5, "alergenos": [] },
         { "nombre": "Copa de vino blanco Rueda", "descripcion": "", "precio": 2.2, "alergenos": [] },
