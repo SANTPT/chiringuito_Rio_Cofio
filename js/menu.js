@@ -141,12 +141,10 @@ const MENU = {
       items: [
         { "nombre": "Zumos", "descripcion": " Tomate o Mººosto", "precio": 2.4, "alergenos": [] },
         { "nombre": "Refrescos", "descripcion": "Coca-Cola, Coca-Cola Zero, Nestea, Aquarius o Fanta", "precio": 2.4, "alergenos": [] },
-        { "nombre": "RedBull", "descripcion": "", "precio": 3.2, "alergenos": [] },
         { "nombre": "Agua pequeña", "descripcion": "", "precio": 1.5, "alergenos": [] },
         { "nombre": "Agua grande", "descripcion": "", "precio": 2.8, "alergenos": [] },
         { "nombre": "Agua con gas", "descripcion": "", "precio": 2.4, "alergenos": [] },
         { "nombre": "Botellín 1/3", "descripcion": "", "precio": 3.0, "alergenos": [] },
-        { "nombre": "Cubo", "descripcion": "5 botellines de 1/4", "precio": 7.5, "alergenos": [] },
         { "nombre": "Botellín 1/4", "descripcion": "", "precio": 1.9, "alergenos": [] },
         { "nombre": "1906", "descripcion": "", "precio": 3.2, "alergenos": [] },
         { "nombre": "Copa de vino del año", "descripcion": "", "precio": 2.2, "alergenos": [] },
@@ -155,7 +153,6 @@ const MENU = {
         { "nombre": "Cava", "descripcion": "", "precio": 4, "alergenos": [] },
         { "nombre": "Tinto de verano", "descripcion": "", "precio": 3.5, "alergenos": [] },
         { "nombre": "Cubata", "descripcion": "", "precio": 7.5, "alergenos": [] },
-        { "nombre": "Cubata RedBull", "descripcion": "", "precio": 8.5, "alergenos": [] },
         { "nombre": "Cubata especial", "descripcion": "", "precio": 9, "alergenos": [] },
         { "nombre": "Chupito", "descripcion": "", "precio": 2.5, "alergenos": [] },
         { "nombre": "Copa de licor", "descripcion": "", "precio": 5, "alergenos": [] }
