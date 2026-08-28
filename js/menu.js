@@ -107,7 +107,7 @@ const MENU = {
       titulo: "Postres",
       items: [
         { "nombre": "Coulant de chocolate", "descripcion": "Con helado de pistacho", "precio": 5, "alergenos": ["gluten", "lacteos", "huevo", "frutos_secos", "soja"] },
-        { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], disponible: false }
+        { "nombre": "Propuesta del día", "descripcion": "Pregunta nuestra sugerencia", "precio": null, "precioTexto": "S/M", "alergenos": [], }
       ]
     },
 
